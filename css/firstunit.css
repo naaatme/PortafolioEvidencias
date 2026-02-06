@@ -1,0 +1,175 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== NUEVA PALETA AZUL ===== */
+:root {
+    --azul-principal: #0f4c75;   /* Azul petróleo */
+    --azul-secundario: #3282b8;  /* Azul medio */
+    --azul-acento: #bbe1fa;      /* Azul claro */
+    --fondo: #f4f9fd;            /* Fondo muy claro */
+    --texto: #1b262c;
+    --blanco: #ffffff;
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, var(--azul-principal), var(--azul-secundario));
+    color: var(--blanco);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 0.95rem;
+}
+
+/* ===== NAV ===== */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ===== SECCIONES ===== */
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: var(--azul-principal);
+    margin-bottom: 19px;
+}
+
+/* ===== TARJETAS ===== */
+article {
+    background-color: var(--blanco);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(15, 76, 117, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 76, 117, 0.25);
+}
+
+article h3 {
+    color: var(--azul-secundario);
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== BOTONES ===== */
+button {
+    background-color: var(--azul-secundario);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--azul-principal);
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--azul-acento);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(15, 76, 117, 0.3),
+        transparent
+    );
+    margin: 30px auto;
+    max-width: 900px;
+}
+
